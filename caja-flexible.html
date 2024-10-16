@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Caja flex</title>
+	<style>
+        #padre{
+            width: 725px;
+            background: #E0E0E0;
+            height: 300px;
+            display: flex;
+        }
+        #padre > div{ /*propiedad para modificar todo*/
+
+        }
+        #hijo1{
+            background: #96F6B1;
+            flex-grow: 2;
+            flex-basis: 100px;
+        }
+        #hijo2{
+            background: #F7B3E0;
+            flex-grow: 1;
+            flex-basis: 100px;
+        }
+        #hijo3{
+            background: #96F6B1;
+            flex-grow: 1;
+            flex-basis: 100px;
+        }
+        #hijo4{
+            background: #F7B3E0;
+            flex-grow: 1;
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section id="padre">
+        <div id="hijo1"> caja 1</div>
+        <div id="hijo2"> caja 2</div>
+        <div id="hijo3"> caja 3</div>
+        <div id="hijo4"> caja 4</div>
+    </section>
+</body>
+</html>
+
+
+<!--  flex-grow: ; indice de crecimiento o factor de crecimmimento
+            flex-shrink: ; factor de decrecimiento
+            flex-basis: ; tamaño base -->

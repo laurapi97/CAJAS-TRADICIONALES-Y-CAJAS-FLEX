@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Caja flex</title>
+	<style>
+        #padre{
+            width: 100%;
+            background: #E0E0E0;
+            height: 725px;
+            display: flex;
+            /*flex-direction: row;*/
+           /* flex-wrap: wrap-reverse; /* me ayuda a acomodar el contenido que sea mayor que el contenedor*/
+           flex-flow: row wrap;
+           justify-content: center;
+           align-content: center;
+
+        }
+        #padre > div{ /*propiedad para modificar todo*/
+            width: 200px;
+            background: #E2A2A2;
+            height: 200px;
+            margin: 5px;
+            border: solid 1px red;
+        }
+       
+    </style>
+</head>
+<body>
+    <section id="padre">
+        <div > caja 1</div>
+        <div > caja 2</div>
+        <div > caja 3</div>
+        <div > caja 4</div>
+        <div > caja 5</div>
+        <div > caja 6</div>
+    </section>
+</body>
+</html>
